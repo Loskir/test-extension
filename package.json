@@ -1,0 +1,35 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "test-icons",
+  "title": "Test Icons",
+  "version": "1.1.0",
+  "author": "Loskir",
+  "license": "MIT",
+  "description": "Test extension to demonstrate icon scaling",
+  "icon": "warning.png",
+  "commands": [
+    {
+      "name": "index",
+      "title": "Test Icons",
+      "mode": "view",
+      "description": "Test icon scaling"
+    }
+  ],
+  "categories": [
+    "Developer Tools"
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.31.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.4.3",
+    "typescript": "^4.3.5"
+  },
+  "scripts": {
+    "dev": "ray develop",
+    "build": "ray build -e dist",
+    "lint": "ray lint",
+    "fix-lint": "ray lint --fix",
+    "fix-prettier": "prettier --write src"
+  }
+}
